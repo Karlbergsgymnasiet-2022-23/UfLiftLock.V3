@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(253, 255, 240, 0);
+    margin-top: 15vh;
+    justify-content: center;
+}
+
+main .produktImgArea {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    height: 100%;
+    overflow-y: hidden;
+    justify-content: space-between;
+}
+
+main .produktTextArea {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+main .produktMainSlides {
+    display: none;
+    width: 85%;
+    height: 100%;
+    background-color: aliceblue;
+    object-fit: cover;
+    object-position: 0px 70%;
+}
+
+main .produktSlideArea {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .produktSlides {
+    width: 80%;
+    height: 16%;
+    cursor: pointer;
+}
+
+.produktTextArea p:first-of-type {
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.produktTextArea p:last-of-type {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.produktTextArea button {
+    width: 80%;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-y: hidden;
+}
+
+.produktTextArea button:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 2px solid black;
+}
+
+.produktTextArea ul {
+    width: 80%;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+    main .produktTextArea {
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+    }
+    main .produktImgArea {
+        width: 100%;
+        height: 50vh;
+    }
+    main .produktSlideArea {
+        height: 100%;
+    }
+    main .produktSlides {
+        width: 80%;
+    }
+    main .produktMainSlides {
+        width: 85%;
+        height: 100%;
+    }
+    .produktTextArea button {
+        font-size: 1rem;
+    }
+}

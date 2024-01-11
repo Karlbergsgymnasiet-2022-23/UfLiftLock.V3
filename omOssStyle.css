@@ -1,0 +1,83 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    display: grid;
+    width: 100%;
+}
+
+main {
+    justify-self: center;
+    align-self: center;
+    height: 60%;
+    width: 60%;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+main .slides {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+main .slides img {
+    width: 30%;
+    height: 90%;
+    object-fit: cover;
+    border: 3px solid black;
+    object-position: 0 -10%;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+main p {
+    color: rgb(0, 0, 0);
+    width: 80%;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+main h2 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.slides div {
+    width: 50%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    opacity: .8;
+    margin-left: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.prev,
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 2rem;
+    height: 4rem;
+    background-color: rgb(94, 214, 250);
+    cursor: pointer;
+    opacity: .9;
+    top: 47%;
+    border-radius: 5px;
+}
+
+.next {
+    right: 20%;
+}
